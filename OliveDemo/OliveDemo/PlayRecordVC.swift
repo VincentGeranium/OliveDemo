@@ -1,7 +1,7 @@
 import UIKit
 import AVFoundation
 
-class PlayRecordVC: UIViewController, AVAudioRecorderDelegate {
+class PlayRecordVC: UIViewController {
 
     let audioSession = AVAudioSession.sharedInstance()
     let player = AVAudioPlayerNode()
@@ -12,7 +12,7 @@ class PlayRecordVC: UIViewController, AVAudioRecorderDelegate {
 
         do {
             try audioSession.setCategory(.playAndRecord, mode: .default, options: [.allowBluetooth])
-            try audioSession.setMode(.default)
+            try audioSession.setMode(.gameChat)
             try audioSession.setActive(true)
         } catch {
         print(error)
@@ -49,5 +49,9 @@ class PlayRecordVC: UIViewController, AVAudioRecorderDelegate {
         engine.stop()
         player.stop()
     }
+}
 
+// MARK: - extension for AVAudioRecorderDelegate
+extension PlayRecordVC:  AVAudioRecorderDelegate {
+    
 }
