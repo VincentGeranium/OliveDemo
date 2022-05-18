@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF8D9C112834972F001D535C /* AudioInputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D9C102834972F001D535C /* AudioInputNode.swift */; };
 		BFCF10D9282A0BDE007FFE44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCF10D8282A0BDE007FFE44 /* AppDelegate.swift */; };
 		BFCF10DB282A0BDE007FFE44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCF10DA282A0BDE007FFE44 /* SceneDelegate.swift */; };
 		BFCF10E0282A0BDE007FFE44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFCF10DE282A0BDE007FFE44 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF8D9C102834972F001D535C /* AudioInputNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioInputNode.swift; sourceTree = "<group>"; };
 		BFCF10D5282A0BDE007FFE44 /* OliveDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OliveDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFCF10D8282A0BDE007FFE44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFCF10DA282A0BDE007FFE44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF8D9C122834AA02001D535C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BFCF10EC282A0D97007FFE44 /* PlayRecordVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BF8D9C132834AA13001D535C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BFCF10DE282A0BDE007FFE44 /* Main.storyboard */,
+				BFCF10E3282A0BE0007FFE44 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF8D9C142834AA1C001D535C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF8D9C102834972F001D535C /* AudioInputNode.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BFCF10CC282A0BDE007FFE44 = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +85,11 @@
 			children = (
 				BFCF10D8282A0BDE007FFE44 /* AppDelegate.swift */,
 				BFCF10DA282A0BDE007FFE44 /* SceneDelegate.swift */,
-				BFCF10EC282A0D97007FFE44 /* PlayRecordVC.swift */,
-				BFCF10DE282A0BDE007FFE44 /* Main.storyboard */,
 				BFCF10E1282A0BE0007FFE44 /* Assets.xcassets */,
-				BFCF10E3282A0BE0007FFE44 /* LaunchScreen.storyboard */,
 				BFCF10E6282A0BE0007FFE44 /* Info.plist */,
+				BF8D9C142834AA1C001D535C /* Model */,
+				BF8D9C132834AA13001D535C /* View */,
+				BF8D9C122834AA02001D535C /* Controller */,
 			);
 			path = OliveDemo;
 			sourceTree = "<group>";
@@ -141,6 +168,7 @@
 				BFCF10D9282A0BDE007FFE44 /* AppDelegate.swift in Sources */,
 				BFCF10DB282A0BDE007FFE44 /* SceneDelegate.swift in Sources */,
 				BFCF10ED282A0D97007FFE44 /* PlayRecordVC.swift in Sources */,
+				BF8D9C112834972F001D535C /* AudioInputNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
